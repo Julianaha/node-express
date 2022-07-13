@@ -3,11 +3,11 @@ import readlineSync from 'readline-sync';
 const lista = []
 
 while (true) {
-    const input = readlineSync.question('Quais propriedades gostaria de armazenar?');
-    if (input === 'SAIR') {
+    const entrada = readlineSync.question('Quais propriedades gostaria de armazenar?');
+    if (entrada === 'sair') {
       break;
     }
-    lista.push(input)
+    lista.push(entrada)
 }
 const listaOrdenada = lista.toString().replace(/[, ]+/g, ' ')
 console.log(listaOrdenada.split(" ").sort().join('\n'))
